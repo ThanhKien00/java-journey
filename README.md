@@ -11,7 +11,7 @@ suggestions are always welcome.
 ## Table of contents
 
 - [Chapter 1: Activates Your Cell Brain With Fundamental]()
-    - [Java in definition]()
+    - [Java in Definition]()
     - [What the hell is JVM, JRE, JDK ?]()
     - [Setting up Environment]()
     - [Hello Java !]()
