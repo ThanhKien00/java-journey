@@ -1,6 +1,8 @@
 # Chapter 1: Activates Your Cell Brain With Fundamental
 
-// Insert meme monkey activate neutron.
+<div align="center">
+    <img src="../assets/neuron-activation.png" alt="Description of Image" width="300">
+</div>
 
 So, you really want to learn to write some Java program, huh? I know this may be your first taste of computer
 programming, or you just can't get anything from computer science class. Whatever brings you here, welcome—I'm glad
