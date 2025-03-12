@@ -16,5 +16,5 @@ Java. Finally, we will take a quick look at The Java brief history.
 
 - [Java in Definition](Java-in-Definition.md)
 - [Setting up Environment]()
-- [Hello Java !]()
+- [Hello Java!]()
 - [A Brief Story of Java and JVM]()

@@ -32,7 +32,7 @@ to scale your project.
 
 In the last so years, Java tries to modernize its language syntax somewhat, to address concerns about verbosity and
 provide features more similar to programmers coming from other popular languages. For example, Java 8 added some impact
-features like Lambda expressions and Stream API. It changed the way that Java developers suffered 😭.
+features like Lambda expressions and Stream API. It gave developers a slightly less painful way to suffer 😭.
 
 // TODO: migrate to Java History.
 As we'll discuss later, the Java project has transitioned to a new release model. In this new model, Java versions are
@@ -46,8 +46,8 @@ released every 6 months, only certain versions (8, 11, 17, 21, and 25) are consi
 Java Virtual Machine is a virtualization engine that enables Java programs to run on various hardware platforms without
 modification. The JVM has been ported to run on a large number of hardware environments, think of it as a _translator_
 that understands the Java language and communicates it to your computer.
-// How does it work?
-//TODO: insert JVM work image.
+
+![How JVM works](../assets/How-JVM-works.png)
 
 Here are various key features of the JVM:
 
