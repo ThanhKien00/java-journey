@@ -80,17 +80,42 @@ performance. Currently, two initiatives are speeding up the startup time of Java
   Java platform. These static images begin quicker and use less memory, similar to the languages that compile to machine
   code.
 
-### How today's Java supports efficient concurrency
+Additionally, snapshot-based approaches are being explored to further optimize startup times. Snapshots allow Java
+applications to resume from a saved state, avoiding the need to start from scratch:
+
+- **Project CraC** proposes adding checkpoint/restore functionality to the JVM. This enables programs to resume
+  execution from a previously saved state, significantly speeding up startup.
+- Cloud platforms like **AWS Lambda’s Snap Start** leverage snapshots to launch Java applications in the cloud. By
+  starting Lambda functions from a pre-saved state, Snap Start drastically reduces startup latency for serverless Java
+  applications.
+
+### Efficient Java Concurrency
 
 Java's thread-based model was complex and less efficient for concurrent programming. This was especially noticeable
 compared to the simpler, more efficient models offered by languages like Go. **Project Loom** is a new response to the
 old need for better handling of many tasks simultaneously. It introduces Virtual Threads (these are like lightweight
-thread), looked after by the JVM. This makes concurrency programming easier and more effective. With this approach, the
-system can manage lots of tasks happening at the same time, even reaching millions.
+thread), looked after by the JVM. With this approach, the system can manage lots of tasks happening at the same time,
+even reaching millions.
 
-### Modern Java’s Efficient Garbage Collection
+### Modern Java Garbage Collection
 
+Java's Garbage Collection, while automatic, has historically been prone to "stop-the-world" pauses, making it an
+unsuitable platform for interactive systems and causing problems for systems that require stable, low-latency.
 
+New Garbage Collectors, such as **Shenandoah** and **ZGC**, have been introduced in Java, which aim to reduce pauses by
+performing most of their garbage collecting work concurrently with Java threads.
+
+### Improved Java Memory
+
+Java applications typically consume more memory for several reasons, including the additional memory required by the
+garbage collector to function and the inherent overhead associated with Java objects.
+
+Initiatives like **Project Lilliput** and **Project Valhalla** aim to minimizing object memory overhead and introducing
+value types, making Java applications more memory-efficient.
+
+👉 In conclusion, Java and its ecosystem continue to be pivotal for contemporary business success. Java remains the first
+choice for creating enterprise applications, despite the availability of other frameworks. It's time for you to pick up
+some idea and make it come true with Java ✨.
 
 ## References
 
