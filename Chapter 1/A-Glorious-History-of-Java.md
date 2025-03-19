@@ -31,55 +31,74 @@ Since its first release in 1995, Java has evolved significantly. In 1998, Sun Mi
 Process (JCP) to involve other companies in the development and standardization of Java. The JCP manages Java
 specifications, which define the language's syntax, semantics, libraries and APIs.
 
-- JDK 1.0: _January 23, 1996_. It included fundamental features such as classes, objects, inheritance, polymorphism,
-  exception handling, threading, and garbage collection. It also provided core libraries for I/O, networking, graphics,
-  and user interface components. The first stable version, JDK 1.0.2, is called Java 1.
-- JDK 1.1: _February 19, 1997_. This release of Java more than doubled the size of the Java platform. It introduced
-  "**Inner Classes**" and the first version of the **Reflection API**.
-- J2SE 1.2: _December 8, 1998; Codename: Playground_. This release was rebranded retrospectively Java 2, and the version
-  named "J2SE" (Java 2 Platform, Standard Edition) replaced JDK to distinguish the base platform from J2EE (Java 2
-  Platform, Enterprise Edition) and J2ME (Java 2 Platform, Micro Edition). This was a very significant release of Java
-  as it tripled the size of the Java platform to 1520 classes in 59 packages. This release marked the first appearance
-  of the **Java Collections API**.
-- J2SE 1.3: _May 8, 2000; Code name: Kestrel_. This was primarily a maintenance release, focused on bug fixed,
-  stability, and performance improvements. This release also brought in the HotSpot JVM, which is still in use in
-  today (although heavily modified and improved since then). Java 1.3 is the last release of Java to officially support
-  Microsoft Windows 95.
-- J2SE 1.4: _February 6, 2002; Codename: Merlin_. This was another fairly big release, adding important new
-  functionality
-  such as a higher-performance, low-level I/O API; regular expressions for text handling; XML and XSLT libraries; SSL
-  support; a logging API; and cryptography support.
-- Java SE 5: _September 30, 2004; Codename: Tiger_. This large release of Java introduced a number of changes to the
-  core language itself, including **generic types**, **enumerated types**, **annotations**, **varargs methods**,
-  **Autoboxing**, and a new `for` loop. This release included 3562 classes and interfaces in 166 packages. Notable
-  additions included utilities for concurrent programming, a remote management framework, and classes for the remote
-  management and instrumentation of the JVM itself.
-- Java SE 6: _December 11, 2006; Codename: Mustang_. This release was also largely a maintenance and performance
-  release. It introduced the Compiler API, expanded the usage and scope of annotations, and provided bindings to allow
-  scripting languages to interoperate with Java. There were also a large number of internal bug fixes and improvements
-  to the JVM and the Swing GUI technology.
-- Java SE 7: _July 28, 2011; Codename: Dolphin_. The first Java release under Oracle, it introduced significant upgrades
-  to the language and platform, making the first release based on the Open Source reference implementation. Features
-  like try-with-resources, I/O handling and the NIO.2 API making code safer and less error-prone. The Method Handles API
-  offered a simpler, safer alternative to reflection and enabled the invokedynamic bytecode.
-- Java SE 8: _March 18, 2014; LTS Version_. Thís was a huge release, potentially the most significant changes to the
-  language since Java 5. The introduction of **Lambda Expression** provided the ability to enhance the productivity of
-  developers, the Collections were updated to make use of lambdas, and the machinery required to achieve this marked a
-  fundamental change in Java's approach to object orientation. Other major updates include a new **Date and Time API**
-  and major updates to the concurrency libraries.
-- Java SE 9: _September 21, 2017_. Significant delays, this release introduced platform modularity, enabling Java
-  applications to be packaged into deployment units and modularizing the runtime. Additional updates included a new
-  default garbage collection algorithm, a process-handling API, and changes to how frameworks access internals. This
-  release also shifted the Java release cycle to produce new versions every 6 months, though only Long-Term Support 
-  (LTS) releases have gained widespread adoption. From this point, only LTS releases are noted.
-- Java SE 10: 
-- 
+|        Version        | Class File Format <br/> Version | Release Date | Key Features                                                                                                                                                     |
+|:---------------------:|:-------------------------------:|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|        JDK 1.0        |               45                | 23 Jan 1996  | The first official Java release, include core language features, AWT, and basic networking                                                                       |   
+|        JDK 1.1        |               45                | 18 Feb 1997  | Introduced Inner Class, JDBC, RMI, and Reflection                                                                                                                |   
+|       J2SE 1.2        |               46                | 04 Dec 1998  | Aka Java 2, add Swing, Collections API, JIT Compiler, and JavaBeans.                                                                                             |  
+|       J2SE 1.3        |               47                | 08 May 2000  | Enhanced performance, add HotSpot JVM, NJDI, JSSE, and JavaSound.                                                                                                |  
+|       J2SE 1.4        |               48                | 13 Feb 2002  | Introduced Regular expressions, non-blocking I/O, assertion, IPv6 support.                                                                                       |  
+|    J2SE 5.0 (1.5)     |               49                | 30 Sep 2004  | Major release with Generics, Annotations, Enhanced for-loop, autoboxing/unboxing, enums, and varargs.                                                            |  
+|    Java SE 6 (1.6)    |               50                | 11 Dec 2006  | Improved performance, adding scripting support, JDBC 4.0, and pluggable annotations.                                                                             |  
+|    Java SE 7 (1.7)    |               51                | 28 Jul 2011  | Introduced Try-with-resources, switch on strings, multi-catch, binary literals, diamond operator, and NIO 2.0                                                    |  
+| Java SE 8 (1.8) (LTS) |               52                | 18 Mar 2014  | Major release with Lambda expressions, Optional class, Streams API, default methods, functional interfaces, Date/Time API, Concurrency enhancements.             |  
+|    Java SE 9 (1.9)    |               53                | 21 Sep 2017  | Modular system (Project Jigsaw), JShell REPL, Ahead-of-Time (AoT) Compilation by GraalVM, Reactive Streams implementation. Remove JavaDB.                        |  
+|   Java SE 10 (1.10)   |               54                | 20 Mar 2018  | Local variable inference (`var`), Garbage Collector Interface, Application Class-data Sharing, Collectors API changes, and experimental Java-based JIT Compiler. |  
+|   Java SE 11 (LTS)    |               55                | 25 Sep 2018  | Local-variable Syntax for lambda Parameters, Modern HTTP Client, Flight Recorder, Epsilon GC, Unicode 10, Transport Layer Security (LTS) 1.3                     |  
+|      Java SE 12       |               56                | 19 Mar 2019  | Microbenchmark Suite, JVM Constants API, AArch64 Port, G1 Enhancements.                                                                                          |  
+|      Java SE 13       |               57                | 17 Sep 2019  | Dynamic class-file constants, ZGC Enhancements , Legacy Socket API removal.                                                                                      |  
+|      Java SE 14       |               58                | 17 Mar 2020  | ZGC on Windows/MacOS, Switch Expressions, Helpful NullPointerExceptions. Deprecate the Solaris, SPARC ports, and a GC combination algorithms.                    |  
+|      Java SE 15       |               59                | 16 Sep 2020  | Text Blocks, Hidden Classes, Shenandoah to production, ZGC to production, and deprecated applet API removal.                                                     |  
+|      Java SE 16       |               60                | 16 Mar 2021  | Packaging Tools, Records, Pattern Matching for `instanceof`,  Vector API (incubator), Windows/AArch64 port.                                                      |  
+|   Java SE 17 (LTS)    |               61                | 14 Sep 2021  | Sealed classes, Context-Specific Deserialization Filters, macOS/AArch64 port. Remove RMI Activation and the Experimental AOT/JIT Compiler.                       |  
+|      Java SE 18       |               62                | 22 Mar 2022  | Simple Web Server, UTF-8 by Default, Internet-Address Resolution SPI                                                                                             |  
+|      Java SE 19       |               63                | 20 Sep 2022  | Linux/RISC-V port.                                                                                                                                               |  
+|      Java SE 20       |               64                | 21 Mar 2023  | All JEPs were either incubators or previews.                                                                                                                     |  
+|   Java SE 21 (LTS)    |               65                | 19 Sep 2023  | Major release with Virtual Threads, Sequenced Collections, Generational ZGC, Record Patterns, Pattern Matching for `switch`, Key Encapsulation Mechanism API     |  
+|      Java SE 22       |               66                | 19 Mar 2024  | Region Pinning for G1, Unnamed Variable & Patterns, Foreign Function & Memory API.                                                                               |  
+|      Java SE 23       |               67                | 17 Sep 2025  | Markdown Documentation Comments.                                                                                                                                 |  
+| Java SE 24 (Current)  |               68                | 18 Mar 2025  | Late Barrier Expansion for G1, AOT Class Loading & Linking, Class-File API, Stream Gatherers, Synchronize Virtual Threads without Pinning                        |  
 
-## Back to the Java Future
+## Is there a future for Java?
+
+Although Java has been a veteran in software development since 1996, lots of people still have questioned its future.
+Companies that have invested a lot in Java are worried because they don't know what will happen next. And you, a new guy
+want to join the game, also concern yourself with many criticisms of Java. Is Java already digging its grave to heaven?
+
+Due to early performance issues and a verbose coding style, Java was perceived as a slow and outdated language. Yet it
+is worth delving into these misconceptions and learning how Java has evolved into a fully modern technology.
+
+### Ways Java Performance Beat Misconceptions
+
+Java applications have been criticized for their longer startup times and slower performance than compiled languages.
+This is due to the nature of the JVM, as an interpreter of Java bytecode, which often leads to a lag startup time and
+performance. Currently, two initiatives are speeding up the startup time of Java applications:
+
+- **GraalVM** speeds up startups, boosts runtime performance, and lowers memory usage of applications based on JVM.
+  Therefore, it raises the appeal of Java for high-performance computing with ahead-of-time (AOT) compilation.
+- **Project Leyden** aims to solve the startup time issue by introducing a consistent approach for static images in the
+  Java platform. These static images begin quicker and use less memory, similar to the languages that compile to machine
+  code.
+
+### How today's Java supports efficient concurrency
+
+Java's thread-based model was complex and less efficient for concurrent programming. This was especially noticeable
+compared to the simpler, more efficient models offered by languages like Go. **Project Loom** is a new response to the
+old need for better handling of many tasks simultaneously. It introduces Virtual Threads (these are like lightweight
+thread), looked after by the JVM. This makes concurrency programming easier and more effective. With this approach, the
+system can manage lots of tasks happening at the same time, even reaching millions.
+
+### Modern Java’s Efficient Garbage Collection
+
+
 
 ## References
+
 Books:
-- []
+
+- [Java in a Nutshell, Eighth Edition](https://www.oreilly.com/library/view/java-in-a/9781098130992/)
 
 Articles:
-- [Java version history](https://en.wikipedia.org/wiki/Java_version_history)
+
+- [Java version history](https://en.wikipedia.org/wiki/Java_version_history)\
+- [What is the future of Java in today’s enterprise?](https://virtuslab.com/blog/business-insights/what-is-the-future-of-java/)
