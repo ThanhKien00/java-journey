@@ -28,7 +28,7 @@ JDK for its operation, it leverages the value of `JAVA_HOME` to locate the JDK's
 An Integrated Development Environment (IDE) is a software application that provides comprehensive facilities for
 software development. An IDE basically consists of at least a source-code editor, build automation, and a debugger.
 
-There are many popular IDEs for Java development.
+There are many popular IDEs for developing Java application:
 
 ## References
 

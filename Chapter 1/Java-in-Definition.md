@@ -63,7 +63,7 @@ be developed on any device. How is this possible? Let me explain in the followin
   extension `.java`. But since computers don't directly understand Java language, the source code needs to translate to
   some kind of language that computers speak.
 
-  You can be a Pro by writing code without a Integrated Development Environment (IDE) 💪 or you can use
+  You can be a Pro by writing code without an Integrated Development Environment (IDE) 💪 or you can use
   those tools: [VSCode](https://code.visualstudio.com/), [IntelliJ IDEA](https://code.visualstudio.com/),
   [NetBeans](https://netbeans.apache.org/front/main/index.html), [Eclipse](https://www.eclipse.org/downloads/), etc.
   Make sure that your Java source does not have any errors.
